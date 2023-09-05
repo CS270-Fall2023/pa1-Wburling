@@ -1,0 +1,3 @@
+/home/wyatt/Documents/GitHub/pa1-Wburling/Pa1/cmake-build-debug/CMakeFiles/Pa1.dir
+/home/wyatt/Documents/GitHub/pa1-Wburling/Pa1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/wyatt/Documents/GitHub/pa1-Wburling/Pa1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
