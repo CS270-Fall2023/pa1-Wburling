@@ -49,14 +49,14 @@ cmake_ninja_workdir = /home/wyatt/Documents/GitHub/pa1-Wburling/Pa1/cmake-build-
 
 build cmake_object_order_depends_target_Pa1: phony || CMakeFiles/Pa1.dir
 
-build CMakeFiles/Pa1.dir/main.cpp.o: CXX_COMPILER__Pa1_unscanned_Debug /home/wyatt/Documents/GitHub/pa1-Wburling/Pa1/main.cpp || cmake_object_order_depends_target_Pa1
-  DEP_FILE = CMakeFiles/Pa1.dir/main.cpp.o.d
+build CMakeFiles/Pa1.dir/main.c.o: C_COMPILER__Pa1_unscanned_Debug /home/wyatt/Documents/GitHub/pa1-Wburling/Pa1/main.c || cmake_object_order_depends_target_Pa1
+  DEP_FILE = CMakeFiles/Pa1.dir/main.c.o.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/Pa1.dir
   OBJECT_FILE_DIR = CMakeFiles/Pa1.dir
 
-build CMakeFiles/Pa1.dir/functions.cpp.o: CXX_COMPILER__Pa1_unscanned_Debug /home/wyatt/Documents/GitHub/pa1-Wburling/Pa1/functions.cpp || cmake_object_order_depends_target_Pa1
-  DEP_FILE = CMakeFiles/Pa1.dir/functions.cpp.o.d
+build CMakeFiles/Pa1.dir/functions.c.o: C_COMPILER__Pa1_unscanned_Debug /home/wyatt/Documents/GitHub/pa1-Wburling/Pa1/functions.c || cmake_object_order_depends_target_Pa1
+  DEP_FILE = CMakeFiles/Pa1.dir/functions.c.o.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/Pa1.dir
   OBJECT_FILE_DIR = CMakeFiles/Pa1.dir
@@ -69,7 +69,7 @@ build CMakeFiles/Pa1.dir/functions.cpp.o: CXX_COMPILER__Pa1_unscanned_Debug /hom
 #############################################
 # Link the executable Pa1
 
-build Pa1: CXX_EXECUTABLE_LINKER__Pa1_Debug CMakeFiles/Pa1.dir/main.cpp.o CMakeFiles/Pa1.dir/functions.cpp.o
+build Pa1: C_EXECUTABLE_LINKER__Pa1_Debug CMakeFiles/Pa1.dir/main.c.o CMakeFiles/Pa1.dir/functions.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Pa1.dir
   POST_BUILD = :

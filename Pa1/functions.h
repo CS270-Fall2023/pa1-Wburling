@@ -1,4 +1,8 @@
-#pragma once
-#include "stdio.h"
+#include <stdio.h>
 
-int getTokens(char s[], char **args[]);
+#ifndef PA1_FUNCTIONS_H
+#define PA1_FUNCTIONS_H
+
+int getTokens(char *s, char ***args);
+void displayTokens(char **tokens, int numTokens);
+#endif //PA1_FUNCTIONS_H
