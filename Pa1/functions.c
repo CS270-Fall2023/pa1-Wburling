@@ -24,12 +24,21 @@ while (tokenStart < strLen)  { // continues until the string has been passed thr
     char* token = malloc(sizeof(char)*(tokenLength + 1)); // the + 1 takes care of the space after each token
     memcpy(token, s + tokenStart, tokenLength);
     token[tokenLength] = '\0';
-    tokenStorage[tokenCount] = token;
+    if (strlen(token) > 0 && token[0] != ' ') {
+        tokenStorage[tokenCount] = token;
     tokenCount++;
+    } 
+
     tokenStorage = realloc(tokenStorage, sizeof(char**) * (tokenCount + 1)); // realocates the memory to have enough space for the next time the loop is called.
     *args = tokenStorage;
 
+    for(int i =1; i < 2048; i++) {
+    if(tokenEnd + i != ' ') {
     tokenStart = tokenEnd + 1; // moving the start 1 space ahead of the end of the previous string
+
+    }
+    }
+
     tokenEnd = tokenStart; // moves the end to the start to be pushed 1 space at a time to find the space between tokens.
 }
 return tokenCount;
