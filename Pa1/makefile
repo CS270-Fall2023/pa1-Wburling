@@ -1,10 +1,9 @@
-CC = gcc 
-OUTPUT_FILE = main
+CC = gcc
 FLAGS = -Wall
 
-build:
-	${CC} *.c ${FLAGS} -o ${OUTPUT_FILE}
-	
-clean:
-	rm ${OUTPUT_FILE}
+make: *.c
+	${CC} *.c ${FLAGS} -o $@
+
+clean: make
+	rm $<
 
