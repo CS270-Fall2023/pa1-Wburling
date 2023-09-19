@@ -1,7 +1,10 @@
-build:clean
-	gcc *.c -o main
+CC = gcc 
+OUTPUT_FILE = main
+FLAGS = -Wall
+
+build:
+	${CC} *.c ${FLAGS} -o ${OUTPUT_FILE}
 	
 clean:
-	rm main
+	rm ${OUTPUT_FILE}
 
-	
